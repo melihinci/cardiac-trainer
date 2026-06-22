@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "cardiac-trainer",
+    "slug": "cardiac-trainer",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": false,
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.melihinci.cardiactrainer",
+      "infoPlist": {
+        "NSBluetoothAlwaysUsageDescription": "cardiac-trainer uses Bluetooth to connect to your heart rate sensor.",
+        "NSBluetoothPeripheralUsageDescription": "cardiac-trainer uses Bluetooth to connect to your heart rate sensor."
+      }
+    },
+    "android": {
+      "package": "com.melihinci.cardiactrainer",
+      "permissions": [
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BLUETOOTH_SCAN",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "plugins": [
+      "expo-dev-client",
+      [
+        "react-native-ble-plx",
+        {
+          "bluetoothAlwaysPermission": "cardiac-trainer uses Bluetooth to connect to your heart rate sensor."
+        }
+      ]
+    ]
+  }
+}
